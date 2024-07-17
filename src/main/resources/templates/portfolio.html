@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Portfolio</title>
+    <!-- Add CSS and other dependencies -->
+</head>
+<body>
+<header>
+    <h1>Portfolio</h1>
+</header>
+
+<section th:text="${aboutMe}"></section>
+
+<section>
+    <h2>Skills</h2>
+    <ul>
+        <li th:each="skill : ${skills}" th:text="${skill}"></li>
+    </ul>
+</section>
+
+<section>
+    <h2>Projects</h2>
+    <div th:each="project : ${projects}">
+        <h3 th:text="${project.title}"></h3>
+        <p th:text="${project.description}"></p>
+        <h4>Features:</h4>
+        <ul>
+            <li th:each="feature : ${project.features}" th:text="${feature}"></li>
+        </ul>
+        <h4>Technologies Used:</h4>
+        <ul>
+            <li th:each="tech : ${project.technologies}" th:text="${tech}"></li>
+        </ul>
+    </div>
+</section>
+
+<!-- Add more sections for other portfolio content -->
+
+<footer>
+    <h2>Contact Information</h2>
+    <p th:text="${contactInfo}"></p>
+    <h2>References</h2>
+    <div th:each="reference : ${references}">
+        <h3 th:text="${reference.name}"></h3>
+        <p th:text="${reference.title} + ' at ' + ${reference.company}"></p>
+        <p th:text="${reference.email}"></p>
+    </div>
+</footer>
+</body>
+</html>
