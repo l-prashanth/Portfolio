@@ -45,9 +45,33 @@ public class PortfolioController {
         pages.add(new Page("Projects", "This is the projects content.",""));
         pages.add(new Page("Certifications", "This is the certifications content.",""));
         pages.add(new Page("Achievements", "This is the achievements content.",""));
-
+        getSkills(model);
         model.addAttribute("pages", pages);
         return "test1";
+    }
+    private void getSkills(Model model){
+        List<String> backendSkills = new ArrayList<>();
+        backendSkills.add("Spring Boot");
+        backendSkills.add("Java");
+        backendSkills.add("REST API");
+        backendSkills.add("JUnit");
+        backendSkills.add("Karate");
+        backendSkills.add("MongoDB");
+        backendSkills.add("Azure Cloud");
+        backendSkills.add("Spring Security");
+        backendSkills.add("JWT");
+        backendSkills.add("Git");
+        backendSkills.add("Swagger");
+
+        List<String> frontendSkills = new ArrayList<>();
+        frontendSkills.add("VueJS");
+        frontendSkills.add("JavaScript");
+        frontendSkills.add("HTML");
+        frontendSkills.add("Jest");
+        frontendSkills.add("Thymeleaf");
+
+        model.addAttribute("backendSkills", backendSkills);
+        model.addAttribute("frontendSkills", frontendSkills);
     }
 
     private String getAboutMeContent() {
