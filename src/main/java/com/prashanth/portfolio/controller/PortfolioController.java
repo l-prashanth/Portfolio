@@ -38,7 +38,7 @@ public class PortfolioController {
 //        }
 //        pages.setTitle("Page 1");
         List<Page> pages = new ArrayList<>();
-        pages.add(new Page("Hello I'm Prashanth Lokesh ", getAboutMeContent(),"/img/MyPic.jpg"));
+        pages.add(new Page("Overview", getAboutMeContent(),"/img/MyPic.jpg"));
         pages.add(new Page("Skills", "This is the skills content.",""));
         pages.add(new Page("Experience", "This is the experience content.",""));
         pages.add(new Page("Problems Solved", "This is the problems solved content.",""));

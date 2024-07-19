@@ -8,8 +8,12 @@
 <body>
 <div class="container">
     <div class="page" th:each="page, iterStat : ${pages}" th:id="${page.id}">
-        <div th:if="${iterStat.index == 1}" >
+        <div th:if="${iterStat.index == 0}" >
+            <h1>Hello I'm Prashanth Lokesh </h1>
+
+        </div> <div th:if="${iterStat.index == 1}" >
             <h1>Test title</h1>
+  
         </div>
         <div th:if="${iterStat.index == 0}" class="image-card">
             <img th:src="${page.imageUrl}" alt="MyPic" class="my-pic" />

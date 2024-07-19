@@ -54,7 +54,7 @@ body {
     border-radius: 20px;
 }
 
-.buttons-bar button {
+.buttons-bar button,.buttons-bar button:hover  {
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -68,6 +68,6 @@ body {
     border-radius: 4px;
 }
 
-.buttons-bar button:hover {
-    background-color: #45a049;
-}
+/*.buttons-bar button:hover {*/
+/*    background-color: #45a049;*/
+/*}*/
