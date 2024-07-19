@@ -140,3 +140,17 @@ body {
 .right {
     /* No additional styles needed */
 }
+.problem-content{
+
+    padding-bottom: 10px;
+    text-align: left;
+    color: #c0c0c0;
+}
+.problem {
+    margin-bottom: 20px; /* Space between each problem */
+    font-size: 30px;
+}
+.problemList{
+    margin-bottom: 20px;
+    font-size: 20px;
+}

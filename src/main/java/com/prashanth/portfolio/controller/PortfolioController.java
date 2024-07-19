@@ -40,13 +40,16 @@ public class PortfolioController {
         List<Page> pages = new ArrayList<>();
         pages.add(new Page("Overview", getAboutMeContent(),"/img/MyPic.jpg"));
         pages.add(new Page("Skills", "This is the skills content.",""));
-        pages.add(new Page("Experience", "This is the experience content.",""));
-        pages.add(new Page("Problems Solved", "This is the problems solved content.",""));
+//        pages.add(new Page("Experience", "This is the experience content.",""));
         pages.add(new Page("Projects", "This is the projects content.",""));
         pages.add(new Page("Certifications", "This is the certifications content.",""));
         pages.add(new Page("Achievements", "This is the achievements content.",""));
+        pages.add(new Page("Problems Solved", "This is the problems solved content.",""));
+
         getSkills(model);
+        getSolved(model);
         model.addAttribute("pages", pages);
+
         return "test1";
     }
     private void getSkills(Model model){
@@ -72,6 +75,24 @@ public class PortfolioController {
 
         model.addAttribute("backendSkills", backendSkills);
         model.addAttribute("frontendSkills", frontendSkills);
+    }
+    public void getSolved(Model model){
+        List<String> problemsSolved = new ArrayList<>();
+        List<String> problemsSolvedList = new ArrayList<>();
+        problemsSolved.add("Solved challenges like:");
+        problemsSolvedList.add("> Proposed and implemented handling application failures such as downtime using Resilience4j.");
+        problemsSolvedList.add("> Solved the problem of sending data to " +
+                "automation test scripts by using HtmlUnit to <br>" +
+                "programmatically fill out web forms" +
+                "and use the captured data in the automation test Scripts.");
+        problemsSolvedList.add("> Solved the problem of sending data to<br>" +
+                "automation test scripts by using HtmlUnit<br>" +
+                "to programmatically fill out web forms<br>" +
+                "and use the captured data in the<br>" +
+                "automation test Scripts.");
+        model.addAttribute("problemsSolved", problemsSolved);
+        model.addAttribute("problemsSolvedList", problemsSolvedList);
+
     }
 
     private String getAboutMeContent() {

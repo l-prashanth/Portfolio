@@ -27,38 +27,30 @@
                 <div class="skills-card left">
                     <h2>Backend Skills</h2>
                     <div class="skills-list">
-                        <div class="skill">Spring Boot</div>
-                        <div class="skill">Java</div>
-                        <div class="skill">REST API</div>
-                        <div class="skill">JUnit</div>
-                        <div class="skill">Karate</div>
-                        <div class="skill">MongoDB</div>
-                        <div class="skill">Azure Cloud</div>
-                        <div class="skill">Spring Security</div>
-                        <div class="skill">JWT</div>
-                        <div class="skill">Git</div>
-                        <div class="skill">Swagger</div>
+                        <div class="skill" th:each="skill : ${backendSkills}" th:text="${skill}"></div>
                     </div>
                 </div>
                 <div class="skills-card right">
                     <h2>Frontend Skills</h2>
                     <div class="skills-list">
-                        <div class="skill">VueJS</div>
-                        <div class="skill">JavaScript</div>
-                        <div class="skill">HTML</div>
-                        <div class="skill">CSS</div>
-                        <div class="skill">Jest</div>
-                        <div class="skill">Thymeleaf</div>
+                        <div class="skill" th:each="skill : ${frontendSkills}" th:text="${skill}"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div th:if="${iterStat.index == 0}" class="image-card">
+        <div th:if="${iterStat.index == 5}">
+            <h1>Here</h1>
+            <div class="problem-content">
+                <div class="problem" th:each="problem : ${problemsSolved}" th:text="${problem}"></div>
+                <!--utext for line breaks-->
+                <div class="problem-content">
+                    <div class="problemList" th:each="problem : ${problemsSolvedList}" th:utext="${problem}"></div>
+                </div>
+            </div>
+            <!--            th:text="${skill}"-->
+            <!--            <h1>th:text="</h1>-->
 
         </div>
-
-<!--        <h2 th:text="${page.title}"></h2>-->
-<!--        <p th:text="${page.content}"></p>-->
     </div>
 </div>
 
