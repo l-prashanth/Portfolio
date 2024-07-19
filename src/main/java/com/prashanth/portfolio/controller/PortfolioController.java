@@ -85,11 +85,8 @@ public class PortfolioController {
                 "automation test scripts by using HtmlUnit to <br>" +
                 "programmatically fill out web forms" +
                 "and use the captured data in the automation test Scripts.");
-        problemsSolvedList.add("> Solved the problem of sending data to<br>" +
-                "automation test scripts by using HtmlUnit<br>" +
-                "to programmatically fill out web forms<br>" +
-                "and use the captured data in the<br>" +
-                "automation test Scripts.");
+        problemsSolvedList.add("> Implemented Azure Service Bus queues" +
+                "to record failed API’s requests");
         model.addAttribute("problemsSolved", problemsSolved);
         model.addAttribute("problemsSolvedList", problemsSolvedList);
 
