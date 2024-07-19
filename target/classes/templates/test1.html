@@ -43,9 +43,11 @@
             <div class="problem-content">
                 <div class="problem" th:each="problem : ${problemsSolved}" th:text="${problem}"></div>
                 <!--utext for line breaks-->
-                <div class="problem-content">
-                    <div class="problemList" th:each="problem : ${problemsSolvedList}" th:utext="${problem}"></div>
-                </div>
+                <div class="problemList" th:each="problem : ${problemsSolvedList}" th:utext="${problem}"></div>
+                <div class="utilityPackage" th:each="utility : ${utilityPackage}" th:utext="${utility}"></div>
+                <div class="utilityPackageList" th:each="utilityList : ${utilityPackageList}" th:utext="${utilityList}"></div>
+                <div class="problemListCtd" th:each="problemListCtd : ${problemsSolvedListCtd}" th:utext="${problemListCtd}"></div>
+
             </div>
             <!--            th:text="${skill}"-->
             <!--            <h1>th:text="</h1>-->
