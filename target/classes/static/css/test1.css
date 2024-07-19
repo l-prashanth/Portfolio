@@ -54,7 +54,7 @@ body {
     border-radius: 20px;
 }
 
-.buttons-bar button,.buttons-bar button:hover  {
+.buttons-bar button{
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -63,9 +63,15 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    width: 150px; /* Set a fixed width for all buttons */
+    height: 70px;
     margin: 0 10px;
     cursor: pointer;
     border-radius: 4px;
+}
+.buttons-bar button:hover  {
+    background-color: #af4c4c;
+    color: white;
 }
 .resume-button {
     background-color: #4CAF50; /* Green background */
@@ -84,6 +90,67 @@ body {
 .resume-button:hover {
     background-color: #45a049; /* Darker green on hover */
 }
-/*.buttons-bar button:hover {*/
-/*    background-color: #45a049;*/
-/*}*/
+
+/* Styles for screens smaller than 768px (tablets and mobile devices) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Smaller font size for mobile */
+        background-color: lightgray; /* Different background color for mobile */
+    }
+}
+.skills-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Adjusted padding for better spacing */
+    width: 500px; /* Adjust width as needed */
+    text-align: center;
+}
+
+.skills-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between cards */
+}
+
+.skills-list {
+    display: grid; /* Use grid for skills layout */
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 30px; /* Space between skills */
+}
+
+.skill {
+    border: 2px solid #007bff; /* Change color as needed */
+    border-radius: 5px;
+    padding: 10px;
+    background-color: transparent;
+    color: #007bff; /* Change color as needed */
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.skill:hover {
+    background-color: #007bff; /* Change hover color as needed */
+    color: #fff; /* Change text color on hover */
+}
+
+.left {
+    margin-right: 20px; /* Space between left and right cards */
+}
+
+.right {
+    /* No additional styles needed */
+}
+.problem-content{
+
+    padding-bottom: 10px;
+    text-align: left;
+    color: #c0c0c0;
+}
+.problem {
+    margin-bottom: 20px; /* Space between each problem */
+    font-size: 30px;
+}
+.problemList{
+    margin-bottom: 20px;
+    font-size: 20px;
+}

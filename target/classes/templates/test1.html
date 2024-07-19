@@ -9,29 +9,55 @@
 <body>
 <div class="container">
     <div class="page" th:each="page, iterStat : ${pages}" th:id="${page.id}">
-        <div th:if="${iterStat.index == 0}" >
-            <h1>Hello I'm Prashanth Lokesh </h1>
-<!--            <a href={'../img/3.jpg'}; download class="resume-button">Resume</a>-->
+        <div th:if="${iterStat.index == 0}">
+            <h4>Hello I'm</h4>
+            <h1>Prashanth Lokesh</h1>
+            <h4>Java/SpringBoot Developer</h4>
+
+            <!--            <a href={'../img/3.jpg'}; download class="resume-button">Resume</a>-->
             <button>Resume</button>
             <div class="image-card">
-                <img th:src="${page.imageUrl}" alt="MyPic" class="my-pic" />
+                <img th:src="${page.imageUrl}" alt="MyPic" class="my-pic"/>
             </div>
-        </div> <div th:if="${iterStat.index == 1}" >
-            <h1>Test title</h1>
+            <p>A Java enthusiast who transforms complex problems into elegant solutions,</p>
+            <p>specializing in Spring Boot and API development to craft seamless digital experiences</p>
+        </div>
+        <div th:if="${iterStat.index == 1}">
+            <div class="skills-container">
+                <div class="skills-card left">
+                    <h2>Backend Skills</h2>
+                    <div class="skills-list">
+                        <div class="skill" th:each="skill : ${backendSkills}" th:text="${skill}"></div>
+                    </div>
+                </div>
+                <div class="skills-card right">
+                    <h2>Frontend Skills</h2>
+                    <div class="skills-list">
+                        <div class="skill" th:each="skill : ${frontendSkills}" th:text="${skill}"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div th:if="${iterStat.index == 5}">
+            <h1>Here</h1>
+            <div class="problem-content">
+                <div class="problem" th:each="problem : ${problemsSolved}" th:text="${problem}"></div>
+                <!--utext for line breaks-->
+                <div class="problem-content">
+                    <div class="problemList" th:each="problem : ${problemsSolvedList}" th:utext="${problem}"></div>
+                </div>
+            </div>
+            <!--            th:text="${skill}"-->
+            <!--            <h1>th:text="</h1>-->
 
         </div>
-        <div th:if="${iterStat.index == 0}" class="image-card">
-
-        </div>
-
-        <h2 th:text="${page.title}"></h2>
-        <p th:text="${page.content}"></p>
     </div>
 </div>
 
 <div class="buttons-container">
     <div class="buttons-bar">
-        <button th:each="page : ${pages}" th:attrappend="data-page-id=${page.id}" th:text="${page.title}" onclick="scrollToPage(this)">
+        <button th:each="page : ${pages}" th:attrappend="data-page-id=${page.id}" th:text="${page.title}"
+                onclick="scrollToPage(this)">
         </button>
     </div>
 </div>
@@ -40,7 +66,7 @@
     function scrollToPage(button) {
         const pageId = button.getAttribute('data-page-id');
         const page = document.getElementById(pageId);
-        page.scrollIntoView({ behavior: 'smooth' });
+        page.scrollIntoView({behavior: 'smooth'});
 
         const buttons = document.querySelectorAll('.navigation button');
         buttons.forEach(button => button.classList.remove('active'));
