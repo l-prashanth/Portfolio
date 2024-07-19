@@ -1,17 +1,19 @@
 package com.prashanth.portfolio.controller;
 
+import com.prashanth.portfolio.model.Page;
 import com.prashanth.portfolio.model.Project;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 @Controller
 public class PortfolioController {
 
-    @GetMapping("/")
+    @GetMapping("/portfolio")
     public String home(Model model) {
         // Add model attributes for portfolio content
         model.addAttribute("aboutMe", getAboutMeContent());
@@ -22,7 +24,17 @@ public class PortfolioController {
 //        model.addAttribute("contactInfo", getContactInfoContent());
 //        model.addAttribute("references", getReferencesContent());
 
-        return "portfolio";
+        return "test";
+    }
+    @GetMapping("/x")
+    public String getPages(Model model) {
+        List<Page> pages = new ArrayList<>();
+        pages.add(new Page("Page 1", "This is the content of Page 1."));
+        pages.add(new Page("Page 2", "This is the content of Page 2."));
+        pages.add(new Page("Page 3", "This is the content of Page 3."));
+
+        model.addAttribute("pages", pages);
+        return "test1";
     }
 
     private String getAboutMeContent() {
