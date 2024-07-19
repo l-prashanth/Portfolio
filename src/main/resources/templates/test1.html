@@ -7,16 +7,24 @@
 </head>
 <body>
 <div class="container">
-    <div class="page" th:each="page : ${pages}" th:id="${page.id}">
+    <div class="page" th:each="page, iterStat : ${pages}" th:id="${page.id}">
+        <div th:if="${iterStat.index == 1}" >
+            <h1>Test title</h1>
+        </div>
+        <div th:if="${iterStat.index == 0}" class="image-card">
+            <img th:src="${page.imageUrl}" alt="MyPic" class="my-pic" />
+        </div>
 
         <h2 th:text="${page.title}"></h2>
         <p th:text="${page.content}"></p>
     </div>
 </div>
 
-<div class="navigation">
-    <button th:each="page : ${pages}" th:attrappend="data-page-id=${page.id}" th:text="${page.title}" onclick="scrollToPage(this)">
-    </button>
+<div class="buttons-container">
+    <div class="buttons-bar">
+        <button th:each="page : ${pages}" th:attrappend="data-page-id=${page.id}" th:text="${page.title}" onclick="scrollToPage(this)">
+        </button>
+    </div>
 </div>
 
 <script>

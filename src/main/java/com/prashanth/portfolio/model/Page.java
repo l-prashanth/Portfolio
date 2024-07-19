@@ -1,31 +1,23 @@
 package com.prashanth.portfolio.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
+import org.springframework.data.annotation.Id;
+
 import java.util.UUID;
 
+import static com.prashanth.portfolio.utils.CommonUtils.generateUniqueId;
+
+@Data
+@RequiredArgsConstructor
 public class Page {
-    private String id;
-    private String title;
-    private String content;
 
-    public Page(String title, String content) {
-        this.id = generateUniqueId();
-        this.title = title;
-        this.content = content;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    private String generateUniqueId() {
-        return UUID.randomUUID().toString();
-    }
+    private String id = generateUniqueId();
+    private final String title;
+    private final String content;
+    private final String imageUrl;
+//    private String generateUniqueId() {
+//        return UUID.randomUUID().toString();
+//    }
 }
