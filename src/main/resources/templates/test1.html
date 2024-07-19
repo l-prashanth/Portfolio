@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Vertical Scrolling Webpage</title>
+    <link rel="stylesheet" th:href="@{/css/test1.css}">
+</head>
+<body>
+<div class="container">
+    <div class="page" th:each="page, iterStat : ${pages}" th:id="${page.id}">
+        <div th:if="${iterStat.index == 0}" >
+            <h1>Hello I'm Prashanth Lokesh </h1>
+            <div class="image-card">
+                <img th:src="${page.imageUrl}" alt="MyPic" class="my-pic" />
+            </div>
+            <button>Resume</button>
+
+        </div> <div th:if="${iterStat.index == 1}" >
+            <h1>Test title</h1>
+
+        </div>
+        <div th:if="${iterStat.index == 0}" class="image-card">
+
+        </div>
+
+        <h2 th:text="${page.title}"></h2>
+        <p th:text="${page.content}"></p>
+    </div>
+</div>
+
+<div class="buttons-container">
+    <div class="buttons-bar">
+        <button th:each="page : ${pages}" th:attrappend="data-page-id=${page.id}" th:text="${page.title}" onclick="scrollToPage(this)">
+        </button>
+    </div>
+</div>
+
+<script>
+    function scrollToPage(button) {
+        const pageId = button.getAttribute('data-page-id');
+        const page = document.getElementById(pageId);
+        page.scrollIntoView({ behavior: 'smooth' });
+
+        const buttons = document.querySelectorAll('.navigation button');
+        buttons.forEach(button => button.classList.remove('active'));
+
+        button.classList.add('active');
+    }
+</script>
+</body>
+</html>

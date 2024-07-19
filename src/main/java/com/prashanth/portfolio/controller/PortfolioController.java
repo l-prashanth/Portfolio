@@ -1,17 +1,22 @@
 package com.prashanth.portfolio.controller;
 
+import com.prashanth.portfolio.model.Page;
 import com.prashanth.portfolio.model.Project;
+
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 @Controller
+@AllArgsConstructor
 public class PortfolioController {
 
-    @GetMapping("/")
+    @GetMapping("/portfolio")
     public String home(Model model) {
         // Add model attributes for portfolio content
         model.addAttribute("aboutMe", getAboutMeContent());
@@ -22,7 +27,27 @@ public class PortfolioController {
 //        model.addAttribute("contactInfo", getContactInfoContent());
 //        model.addAttribute("references", getReferencesContent());
 
-        return "portfolio";
+        return "test";
+    }
+    @GetMapping("/x")
+    public String getPages(Model model) {
+//        pageRepository.findById(0).get().setTitle();
+//        Page pages = new Page();
+//        for(int i = 0;i<3;i++){
+//            pages.setTitle("Page 1");
+//        }
+//        pages.setTitle("Page 1");
+        List<Page> pages = new ArrayList<>();
+        pages.add(new Page("Overview", getAboutMeContent(),"/img/MyPic.jpg"));
+        pages.add(new Page("Skills", "This is the skills content.",""));
+        pages.add(new Page("Experience", "This is the experience content.",""));
+        pages.add(new Page("Problems Solved", "This is the problems solved content.",""));
+        pages.add(new Page("Projects", "This is the projects content.",""));
+        pages.add(new Page("Certifications", "This is the certifications content.",""));
+        pages.add(new Page("Achievements", "This is the achievements content.",""));
+
+        model.addAttribute("pages", pages);
+        return "test1";
     }
 
     private String getAboutMeContent() {
