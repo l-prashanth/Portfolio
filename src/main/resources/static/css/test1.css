@@ -67,7 +67,23 @@ body {
     cursor: pointer;
     border-radius: 4px;
 }
+.resume-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline block */
+    font-size: 16px; /* Font size */
+    margin: 10px 0; /* Margin */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 4px; /* Rounded corners */
+}
 
+.resume-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
 /*.buttons-bar button:hover {*/
 /*    background-color: #45a049;*/
 /*}*/

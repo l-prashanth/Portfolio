@@ -2,6 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport meta tag -->
     <title>Vertical Scrolling Webpage</title>
     <link rel="stylesheet" th:href="@{/css/test1.css}">
 </head>
@@ -10,11 +11,11 @@
     <div class="page" th:each="page, iterStat : ${pages}" th:id="${page.id}">
         <div th:if="${iterStat.index == 0}" >
             <h1>Hello I'm Prashanth Lokesh </h1>
+<!--            <a href={'../img/3.jpg'}; download class="resume-button">Resume</a>-->
+            <button>Resume</button>
             <div class="image-card">
                 <img th:src="${page.imageUrl}" alt="MyPic" class="my-pic" />
             </div>
-            <button>Resume</button>
-
         </div> <div th:if="${iterStat.index == 1}" >
             <h1>Test title</h1>
 
