@@ -11,16 +11,19 @@
 <div class="container">
     <div class="page" th:each="page, iterStat : ${pages}" th:id="${page.id}">
         <div th:if="${iterStat.index == 0}">
-            <h4>Hello I'm</h4>
-            <h1>Prashanth Lokesh</h1>
-            <h4>Java/SpringBoot Developer</h4>
-            <!--            <a href={'../img/3.jpg'}; download class="resume-button">Resume</a>-->
-            <button>Resume</button>
-            <div class="myPic-card">
-                <img src="/img/MyPic.jpg" alt="MyPic" class="my-pic"/>
+            <div class="page1-container">
+                <h4>Hello I'm</h4>
+                <h1>Prashanth Lokesh</h1>
+                <h4 id="title">
+                    <span class="title-text">Java / Spring Boot Developer</span><span class="cursor">|</span>
+                </h4>
+                <button id="resumeButton" class="resume-button">Resume</button>
+                <div class="myPic-card">
+                    <img src="/img/MyPic.jpg" alt="MyPic" class="my-pic"/>
+                </div>
+                <p class="intro">A Java enthusiast who transforms complex problems into elegant solutions specializing in Spring Boot and Api development to craft seamless digital experiences</p>
             </div>
-            <p>A Java enthusiast who transforms complex problems into elegant solutions,</p>
-            <p>specializing in Spring Boot and API development to craft seamless digital experiences</p>
+
         </div>
         <div th:if="${iterStat.index == 1}">
             <div class="skills-container">
@@ -61,3 +64,4 @@
 </div>
 </body>
 </html>
+https://drive.google.com/file/d/1uoQLBfODh-XOiqjTX5qjBm5rQcv--Yy6/view?usp=sharing
