@@ -2,25 +2,62 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Dynamic Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport meta tag -->
+    <title>Vertical Scrolling Webpage</title>
+    <link rel="stylesheet" th:href="@{/css/portfolio.css}">
+    <script type=text/javascript th:src="@{/js/portfolio.js}"></script>
 </head>
-<link rel="stylesheet" th:href="@{/css/portfolio.css}">
-<script type=text/javascript th:src="@{/js/portfolio.js}"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
 <body>
 <div class="container">
-    <h1>Hello I'm</h1>
-    <h2>Prashanth Lokesh</h2>
-    <p>Java Developer/SpringBoot Developer</p>
+    <div class="page" th:each="page, iterStat : ${pages}" th:id="${page.id}">
+        <div th:if="${iterStat.index == 0}">
+            <h4>Hello I'm</h4>
+            <h1>Prashanth Lokesh</h1>
+            <h4>Java/SpringBoot Developer</h4>
+            <!--            <a href={'../img/3.jpg'}; download class="resume-button">Resume</a>-->
+            <button>Resume</button>
+            <div class="image-card">
+                <img src="/img/MyPic.jpg" alt="MyPic" class="my-pic"/>
+            </div>
+            <p>A Java enthusiast who transforms complex problems into elegant solutions,</p>
+            <p>specializing in Spring Boot and API development to craft seamless digital experiences</p>
+        </div>
+        <div th:if="${iterStat.index == 1}">
+            <div class="skills-container">
+                <div class="skills-card left">
+                    <h2>Backend Skills</h2>
+                    <div class="skills-list">
+                        <div class="skill" th:each="skill : ${backendSkills}" th:text="${skill}"></div>
+                    </div>
+                </div>
+                <div class="skills-card right">
+                    <h2>Frontend Skills</h2>
+                    <div class="skills-list">
+                        <div class="skill" th:each="skill : ${frontendSkills}" th:text="${skill}"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div th:if="${iterStat.index == 5}">
+            <h1>Here</h1>
+            <div class="problem-content">
+                <div class="problem" th:each="problem : ${problemsSolved}" th:text="${problem}"></div>
+                <!--utext for line breaks-->
+                <div class="problemList" th:each="problem : ${problemsSolvedList}" th:utext="${problem}"></div>
+                <div class="utilityPackage" th:each="utility : ${utilityPackage}" th:utext="${utility}"></div>
+                <div class="utilityPackageList" th:each="utilityList : ${utilityPackageList}" th:utext="${utilityList}"></div>
+                <div class="problemListCtd" th:each="problemListCtd : ${problemsSolvedListCtd}" th:utext="${problemListCtd}"></div>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="buttons">
-    <button id="resumeButton">Resume</button>
-    <button>Lets Talk</button>
-</div>
-<div class="container">
-    <h1>Get to know</h1>
-    <h2>About Me</h2>
+
+<div class="buttons-container">
+    <div class="buttons-bar">
+        <button th:each="page : ${pages}" th:attrappend="data-page-id=${page.id}" th:text="${page.pageName}"
+                onclick="scrollToPage(this)">
+        </button>
+    </div>
 </div>
 </body>
 </html>
