@@ -15,24 +15,10 @@ import java.util.List;
 @AllArgsConstructor
 public class PortfolioController {
     private final PortfolioService portfolioService;
-
-    @GetMapping("/portfolio")
-    public String home(Model model) {
-        return "test";
-    }
-    @GetMapping("/x")
+    @GetMapping("/l-prashanth")
     public String getPages(Model model) {
-        List<Page> pages = new ArrayList<>();
-        pages.add(new Page("Overview", "","/img/MyPic.jpg"));
-        pages.add(new Page("Skills", "This is the skills content.",""));
-        pages.add(new Page("Projects", "This is the projects content.",""));
-        pages.add(new Page("Certifications", "This is the certifications content.",""));
-        pages.add(new Page("Achievements", "This is the achievements content.",""));
-        pages.add(new Page("Problems Solved", "This is the problems solved content.",""));
-        portfolioService.getSkills(model);
-        portfolioService.getSolved(model);
-        model.addAttribute("pages", pages);
-
-        return "test1";
+        portfolioService.handlePages(model);
+        portfolioService.getALlPageContent(model);
+        return "portfolio";
     }
 }
