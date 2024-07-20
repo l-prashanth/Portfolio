@@ -6,6 +6,9 @@ body {
     background-color: #020e1c; /* Set the background color to the opposite of #89fff6 */
     color: #89fff6; /* Set the text color to the opposite of #020e1c */
 }
+:root {
+    color-scheme: light only;
+}
 
 .container {
     height: 100vh; /* Full viewport height */
@@ -236,6 +239,87 @@ body {
     text-align: left;
     gap: 100px;
 }
+.page1-github {
+    filter: brightness(0) saturate(100%) invert(69%) sepia(100%) saturate(675%) hue-rotate(120deg) brightness(95%) contrast(100%);
+    position: absolute; /* Position the GitHub link and image independently */
+    bottom: 22ex; /* Adjust the top position as needed */
+    left: 51.5ex; /* Adjust the right position as needed */
+}
+
+.github-pic {
+    width: 30px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+.page1-linkedin {
+    filter: brightness(0) saturate(100%) invert(69%) sepia(100%) saturate(675%) hue-rotate(120deg) brightness(95%) contrast(100%);
+    position: absolute; /* Position the GitHub link and image independently */
+    bottom: 28ex; /* Adjust the top position as needed */
+    left: 50.5ex; /* Adjust the right position as needed */
+}
+
+.linkedin-pic {
+    width: 48px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+.page1-location {
+    filter: brightness(0) saturate(100%) invert(69%) sepia(100%) saturate(675%) hue-rotate(120deg) brightness(95%) contrast(100%);
+    position: absolute; /* Position the GitHub link and image independently */
+    bottom: 22.5ex; /* Adjust the top position as needed */
+    right: 51.7ex; /* Adjust the right position as needed */
+}
+
+.location-pic {
+    width: 30px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+.vertical-line-left1,.vertical-line-left2,.vertical-line-left3,.vertical-line-right1,.vertical-line-right2,.vertical-line-right3 {
+    position: absolute; /* Position the Gmail image independently */
+    width: 2px; /* Set the width of the line */
+    background-color: #89fff6; /* Set the color of the line */
+}
+.vertical-line-left1{
+    height: 10ex; /* Set the height of the line */
+    bottom: 35ex; /* Adjust the bottom position as needed */
+    left: 53.5ex; /* Adjust the left position as needed */
+ }
+.vertical-line-left2{
+    height: 7ex; /* Set the height of the line */
+    bottom: 47ex; /* Adjust the bottom position as needed */
+    left: 53.5ex; /* Adjust the left position as needed */
+}
+.vertical-line-left3{
+    height: 4ex; /* Set the height of the line */
+    bottom: 56ex; /* Adjust the bottom position as needed */
+    left: 53.5ex; /* Adjust the left position as needed */
+}
+.vertical-line-right1{
+    height: 10ex; /* Set the height of the line */
+    bottom: 35ex; /* Adjust the bottom position as needed */
+    right: 53.5ex; /* Adjust the left position as needed */
+}
+.vertical-line-right2{
+    height: 7ex; /* Set the height of the line */
+    bottom: 47ex; /* Adjust the bottom position as needed */
+    right: 53.5ex; /* Adjust the left position as needed */
+}
+.vertical-line-right3{
+    height: 4ex; /* Set the height of the line */
+    bottom: 56ex; /* Adjust the bottom position as needed */
+    right: 53.5ex; /* Adjust the left position as needed */
+}
+
+.page1-gmail {
+    filter: brightness(0) saturate(100%) invert(69%) sepia(100%) saturate(675%) hue-rotate(120deg) brightness(95%) contrast(100%);
+    position: absolute; /* Position the Gmail image independently */
+    bottom: 28ex; /* Adjust the bottom position as needed */
+    right: 50.5ex; /* Adjust the left position as needed */
+}
+
+.gmail-pic {
+    width: 50px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
 
 
 
