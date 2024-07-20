@@ -20,7 +20,7 @@ public class PortfolioService {
                 new Page("Projects"),
                 new Page("Certifications"),
                 new Page("Achievements"),
-                new Page("Problems Solved")
+                new Page("Why Hire Me?")
         ));
         model.addAttribute("pages", pages);
     }
