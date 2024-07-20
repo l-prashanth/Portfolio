@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static com.prashanth.portfolio.constants.AwardConstants.AWARD_1;
+import static com.prashanth.portfolio.constants.AwardConstants.*;
 import static com.prashanth.portfolio.constants.Constants.*;
 
 @Service
@@ -45,7 +45,7 @@ public class PortfolioService {
         model.addAttribute("problemsSolvedList", problemsSolvedList);
     }
     private void getAwards(Model model) {
-        model.addAttribute("award1", AWARD_1);
+        model.addAttribute("az204", AZ204);
 //        model.addAttribute("problemsSolvedListCtd", problemsSolvedListCtd);
 //        model.addAttribute("utilityPackage", utilityPackage);
 //        model.addAttribute("problemsSolved", problemsSolved);
