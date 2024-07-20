@@ -21,7 +21,8 @@
                 <div class="myPic-card">
                     <img src="/img/MyPic.jpg" alt="MyPic" class="my-pic"/>
                 </div>
-                <p class="intro">A Java enthusiast who transforms complex problems into elegant solutions specializing in Spring Boot and Api development to craft seamless digital experiences</p>
+                <p class="intro">A Java enthusiast who transforms complex problems into elegant solutions specializing
+                    in Spring Boot and Api development to craft seamless digital experiences</p>
             </div>
             <div class="page1-github">
                 <a href="https://github.com/l-prashanth?tab=repositories" target="_blank">
@@ -44,17 +45,12 @@
                     <img src="/img/Location.png" alt="LocationPic" class="location-pic"/>
                 </a>
             </div>
-
             <div class="vertical-line-left1"></div>
             <div class="vertical-line-left2"></div>
             <div class="vertical-line-left3"></div>
             <div class="vertical-line-right1"></div>
             <div class="vertical-line-right2"></div>
             <div class="vertical-line-right3"></div>
-
-
-
-
         </div>
         <div th:if="${iterStat.index == 1}">
             <div class="skills-container">
@@ -72,15 +68,62 @@
                 </div>
             </div>
         </div>
+        <div th:if="${iterStat.index == 4}">
+            <div class="page5-container1">
+                <div class="award-content">
+                    <img src="/img/Az204x.png" alt="LocationPic" class="az204-pic"/>
+                    <div class="az204" th:text="${az204}"></div>
+                    <button id="az204Id" class="az204Class">View Certificate</button>
+                </div>
+            </div>
+            <div class="page5-container2">
+                <div class="award-content">
+                    <div class="award" th:text="${az204}"></div>
+<!--                    <img src="/img/Az204x.png" alt="LocationPic" class="az204-pic"/>-->
+                    <button id="az204Id" class="az204Class">View Certificate</button>
+                </div>
+            </div>
+            <div class="page5-container3">
+                <div class="award-content">
+                    <div class="award" th:text="${az204}"></div>
+<!--                    <img src="/img/Az204x.png" alt="LocationPic" class="az204-pic"/>-->
+                    <button id="az204Id" class="az204Class">View Certificate</button>
+                </div>
+            </div>
+            <div class="page5-container4">
+                <div class="award-content">
+                    <div class="award" th:text="${az204}"></div>
+<!--                    <img src="/img/Az204x.png" alt="LocationPic" class="az204-pic"/>-->
+                    <button id="az204Id" class="az204Class">View Certificate</button>
+                </div>
+            </div>
+            <div class="page5-container5">
+                <div class="award-content">
+                    <div class="award" th:text="${az204}"></div>
+<!--                    <img src="/img/Az204x.png" alt="LocationPic" class="az204-pic"/>-->
+                    <button id="az204Id" class="az204Class">View Certificate</button>
+                </div>
+            </div>
+            <div class="page5-container6">
+                <div class="award-content">
+                    <div class="az204" th:text="${az204}"></div>
+<!--                    <img src="/img/Az204x.png" alt="LocationPic" class="az204-pic"/>-->
+                    <button id="az204Id" class="az204Class">View Certificate</button>
+                </div>
+            </div>
+        </div>
         <div th:if="${iterStat.index == 5}">
-            <h1>Here</h1>
-            <div class="problem-content">
-                <div class="problem" th:each="problem : ${problemsSolved}" th:text="${problem}"></div>
-                <!--utext for line breaks-->
-                <div class="problemList" th:each="problem : ${problemsSolvedList}" th:utext="${problem}"></div>
-                <div class="utilityPackage" th:each="utility : ${utilityPackage}" th:utext="${utility}"></div>
-                <div class="utilityPackageList" th:each="utilityList : ${utilityPackageList}" th:utext="${utilityList}"></div>
-                <div class="problemListCtd" th:each="problemListCtd : ${problemsSolvedListCtd}" th:utext="${problemListCtd}"></div>
+            <div class="page6-container">
+                <div class="problem-content">
+                    <div class="problem" th:each="problem : ${problemsSolved}" th:text="${problem}"></div>
+                    <!--utext for line breaks-->
+                    <div class="problemList" th:each="problem : ${problemsSolvedList}" th:utext="${problem}"></div>
+                    <div class="utilityPackage" th:each="utility : ${utilityPackage}" th:utext="${utility}"></div>
+                    <div class="utilityPackageList" th:each="utilityList : ${utilityPackageList}"
+                         th:utext="${utilityList}"></div>
+                    <div class="problemListCtd" th:each="problemListCtd : ${problemsSolvedListCtd}"
+                         th:utext="${problemListCtd}"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -95,4 +138,3 @@
 </div>
 </body>
 </html>
-https://drive.google.com/file/d/1uoQLBfODh-XOiqjTX5qjBm5rQcv--Yy6/view?usp=sharing

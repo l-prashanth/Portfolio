@@ -1,5 +1,4 @@
 package com.prashanth.portfolio.constants;
-import com.prashanth.portfolio.model.Page;
 import lombok.Data;
 
 import java.util.ArrayList;
@@ -28,4 +27,8 @@ public class Constants {
 
     public static final List<String> problemsSolvedListCtd = new ArrayList<>(Arrays.asList(
             problemsSolvedList4,problemsSolvedList5));
+//    public static final List<String> problemsSolvedListCtd = new ArrayList<>(Arrays.asList(
+//            problemsSolvedList4,problemsSolvedList5));
+
+//    public static final List<String> Award1 = new ArrayList<>(List.of(Award1));
 }
