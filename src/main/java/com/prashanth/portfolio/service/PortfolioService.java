@@ -1,6 +1,5 @@
 package com.prashanth.portfolio.service;
 
-import com.prashanth.portfolio.constants.ProblemSolvedConstants;
 import com.prashanth.portfolio.model.Page;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
@@ -10,7 +9,10 @@ import java.util.Arrays;
 import java.util.List;
 
 import static com.prashanth.portfolio.constants.AwardConstants.*;
-import static com.prashanth.portfolio.constants.Constants.*;
+import static com.prashanth.portfolio.constants.CertificationConstants.*;
+import static com.prashanth.portfolio.constants.ExperienceConstants.*;
+import static com.prashanth.portfolio.constants.ProblemSolvedConstants.*;
+import static com.prashanth.portfolio.constants.SkillConstants.*;
 
 @Service
 public class PortfolioService {
@@ -30,32 +32,36 @@ public class PortfolioService {
         getSkillsPage(model);
         getSolvedPage(model);
         getAwards(model);
+        getCertifications(model);
+        getExperience(model);
     }
 
     private void getSkillsPage(Model model) {
-        model.addAttribute("backendSkills", backendSkills);
-        model.addAttribute("frontendSkills", frontendSkills);
+        model.addAttribute("backendSkills", BACKEND_SKILLS);
+        model.addAttribute("frontendSkills", FRONTEND_SKILLS);
     }
 
     private void getSolvedPage(Model model) {
-        model.addAttribute("utilityPackageList", utilityPackageList);
-        model.addAttribute("problemsSolvedListCtd", problemsSolvedListCtd);
-        model.addAttribute("utilityPackage", utilityPackage);
-        model.addAttribute("problemsSolved", problemsSolved);
-        model.addAttribute("problemsSolvedList", problemsSolvedList);
+        model.addAttribute("problemsSolved", PROBLEM_SOLVED);
+        model.addAttribute("problemsSolvedList", PROBLEM_SOLVED_LIST);
+        model.addAttribute("utilityPackage", UTILITY_PACKAGE);
+        model.addAttribute("utilityPackageList", UTILITY_PACKAGE_LIST);
+        model.addAttribute("problemsSolvedListCtd", PROBLEM_SOLVED_LIST_CTD);
     }
     private void getAwards(Model model) {
-        model.addAttribute("az204", AZ204);
-//        model.addAttribute("problemsSolvedListCtd", problemsSolvedListCtd);
-//        model.addAttribute("utilityPackage", utilityPackage);
-//        model.addAttribute("problemsSolved", problemsSolved);
-//        model.addAttribute("problemsSolvedList", problemsSolvedList);
+        model.addAttribute("outstanding", OUTSTANDING);
+        model.addAttribute("onTheSpot", ON_THE_SPOT);
     }
     private void getCertifications(Model model) {
-        model.addAttribute("utilityPackageList", utilityPackageList);
-        model.addAttribute("problemsSolvedListCtd", problemsSolvedListCtd);
-        model.addAttribute("utilityPackage", utilityPackage);
-        model.addAttribute("problemsSolved", problemsSolved);
-        model.addAttribute("problemsSolvedList", problemsSolvedList);
+        model.addAttribute("az204", AZ204);
+        model.addAttribute("az900", AZ900);
+        model.addAttribute("restApi", REST_API);
+    }
+    private void getExperience(Model model){
+        model.addAttribute("pj2Experience", PROJECT_2_EXPERIENCE);
+        model.addAttribute("pj1Experience", PROJECT_1_EXPERIENCE);
+        model.addAttribute("pj2Skills", PJ2_SKILLS);
+        model.addAttribute("pj1Skills", PJ1_SKILLS);
+
     }
 }
