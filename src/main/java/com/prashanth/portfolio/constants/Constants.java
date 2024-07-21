@@ -1,34 +1,41 @@
 package com.prashanth.portfolio.constants;
 import lombok.Data;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-import static com.prashanth.portfolio.constants.ProblemSolvedConstants.*;
 @Data
 public class Constants {
-    public static final List<String> backendSkills = new ArrayList<>(Arrays.asList(
-            "Spring Boot", "Java", "REST API", "JUnit", "Karate", "MongoDB",
-            "Azure Cloud", "Spring Security", "JWT", "Git", "Swagger"));
+    public static String HEADING ="Solved challenges like:";
+    public static String UTILITY_PACKAGE_HEADING ="Developed a versatile utility package for seamless integration into the codebase,<br>" +
+            "encompassing essential features like";
+    public static String PROBLEMS_SOLVED_LIST_1 ="Proposed and implemented handling application failures such as downtime using Resilience4j.<br>" +
+            " This led to a significant cost reduction by replacing the need for extensive production support of " +
+            "the application";
+    public static String PROBLEMS_SOLVED_LIST_2 ="> Solved the problem of sending data to automation test scripts by using HtmlUnit to <br>" +
+            "programmatically fill out web forms and use the captured data in the automation test Scripts.";
+    public static String PROBLEMS_SOLVED_LIST_3 ="> Implemented Azure Service Bus queues to record failed API’s requests";
+    public static String PROBLEMS_SOLVED_LIST_4 ="> Also implemented, multithreading for parallel API calls, JWT authentication";
+    public static String PROBLEMS_SOLVED_LIST_5 ="> Implemented custom exception handling mechanisms";
+    public static String UTILITY_PACKAGE_LIST_1 ="> Dynamic null object (String, Integer handlers";
+    public static String UTILITY_PACKAGE_LIST_2 ="> Optional to String converters";
+    public static String UTILITY_PACKAGE_LIST_3 ="> Environment identifiers";
+    public static String UTILITY_PACKAGE_LIST_4 ="> JSON Handler/Convertor";
+    public static String UTILITY_PACKAGE_LIST_5 ="> Azure Key Vault retrieval";
 
-    public static final List<String> frontendSkills = new ArrayList<>(Arrays.asList(
-            "VueJS", "JavaScript", "HTML", "Jest", "Thymeleaf"));
+    public static String PJ2_EXPERIENCE1 ="Developed multiple APIs from scratch(using SpringBoot) contributing to the bank's technological advancements in the Retail and Cross Border domains";
+    public static String PJ2_EXPERIENCE2 ="Designed and executed architectural designs for applications";
+    public static String PJ2_EXPERIENCE3 ="Developed Function Apps and deployed on Azure App Service Container";
+    public static String PJ2_EXPERIENCE4 ="Built CI/CD pipelines on Azure cloud, streamlining the development workflow and ensuring rapid and reliable deployment";
+    public static String PJ2_EXPERIENCE5 ="Created and managed Azure resources,like Storage Accounts and Key Vaults";
 
-    public static final List<String> problemsSolved = new ArrayList<>(List.of(heading));
+    public static String PJ1_EXPERIENCE1 ="Successfully migrated Mainframe screens to frontend using the VueJS framework, improving user accessibility and system efficiency";
+    public static String PJ1_EXPERIENCE2 ="Managed complex webpage routing within a menu structure, thereby optimizing navigation";
+    public static String PJ1_EXPERIENCE3 ="Developed responsive web applications, ensuring optimal user experience";
 
-    public static final List<String> problemsSolvedList = new ArrayList<>(Arrays.asList(
-            problemsSolvedList1,problemsSolvedList2,problemsSolvedList3));
 
-    public static final List<String> utilityPackage = new ArrayList<>(List.of(utilityPackageHeading));
 
-    public static final List<String> utilityPackageList = new ArrayList<>(Arrays.asList(
-            utilityPackageList1,utilityPackageList2,utilityPackageList3,utilityPackageList4,utilityPackageList5));
 
-    public static final List<String> problemsSolvedListCtd = new ArrayList<>(Arrays.asList(
-            problemsSolvedList4,problemsSolvedList5));
-//    public static final List<String> problemsSolvedListCtd = new ArrayList<>(Arrays.asList(
-//            problemsSolvedList4,problemsSolvedList5));
 
-//    public static final List<String> Award1 = new ArrayList<>(List.of(Award1));
+
+
+
+
 }
