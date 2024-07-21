@@ -122,7 +122,12 @@ body {
     text-align: center;
     transition: box-shadow 0.3s ease; /* Smooth transition for shadow on hover */
 }
-
+.page3-container1:hover,.page3-container2:hover,.page4-container1:hover,.page4-container2:hover,.page4-container3:hover{
+    box-shadow: 0 12px 24px rgba(137, 255, 246, 0.3); /* Change hover shadow color to the opposite of #020e1c */
+}
+.page5-container1:hover,.page5-container2:hover,.page5-container3:hover,.page5-container4:hover,.page5-container5:hover{
+    box-shadow: 0 12px 24px rgba(137, 255, 246, 0.3); /* Change hover shadow color to the opposite of #020e1c */
+}
 
 .page6-container {
     background-color: #020e1c; /* Set the background color for the skills card to the opposite of #89fff6 */
@@ -190,6 +195,8 @@ body {
     width: 600px; /* Adjust width as needed */
     text-align: center;
     transition: box-shadow 0.3s ease; /* Smooth transition for shadow on hover */
+    margin-bottom: 20px;
+    margin-top: -50px;
 }
 
 .page3-container2 {
@@ -383,6 +390,7 @@ body {
     text-align: left;
     gap: 100px;
     font-size: 12px; /* Adjusted for smaller font size */
+    margin-right: 20px;
 }
 
 .page1-github {
