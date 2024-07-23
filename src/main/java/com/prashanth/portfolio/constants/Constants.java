@@ -20,11 +20,11 @@ public class Constants {
     public static String UTILITY_PACKAGE_LIST_4 ="> JSON Handler/Convertor";
     public static String UTILITY_PACKAGE_LIST_5 ="> Azure Key Vault retrieval";
 
-    public static String PJ2_EXPERIENCE1 ="Developed multiple APIs from scratch(using SpringBoot) contributing to the bank's technological advancements in the Retail and Cross Border domains";
-    public static String PJ2_EXPERIENCE2 ="Designed and executed architectural designs for applications";
-    public static String PJ2_EXPERIENCE3 ="Developed Function Apps and deployed on Azure App Service Container";
-    public static String PJ2_EXPERIENCE4 ="Built CI/CD pipelines on Azure cloud, streamlining the development workflow and ensuring rapid and reliable deployment";
-    public static String PJ2_EXPERIENCE5 ="Created and managed Azure resources,like Storage Accounts and Key Vaults";
+    public static String PJ2_EXPERIENCE1 ="Developed crucial daily banking APIs from scratch, managing the full lifecycle of Development to Production";
+    public static String PJ2_EXPERIENCE3 ="Emphasized SOLID principles methodology in my applications";
+    public static String PJ2_EXPERIENCE4 ="Created and managed Azure resources Accounts, Key Vaults, Private Link Endpoints, etc";
+    public static String PJ2_EXPERIENCE5 ="Built CI/CD pipelines on Azure cloud, streamlining the development workflow and ensuring rapid and reliable deployment";
+    public static String PJ2_EXPERIENCE2 ="Developed and deployed Spring Boot applications using App Service Containers";
 
     public static String PJ1_EXPERIENCE1 ="Successfully migrated Mainframe screens to frontend using the VueJS framework, improving user accessibility and system efficiency";
     public static String PJ1_EXPERIENCE2 ="Managed complex webpage routing within a menu structure, thereby optimizing navigation";

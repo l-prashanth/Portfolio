@@ -42,11 +42,23 @@ public class PortfolioService {
     }
 
     private void getSolvedPage(Model model) {
-        model.addAttribute("problemsSolved", PROBLEM_SOLVED);
-        model.addAttribute("problemsSolvedList", PROBLEM_SOLVED_LIST);
-        model.addAttribute("utilityPackage", UTILITY_PACKAGE);
-        model.addAttribute("utilityPackageList", UTILITY_PACKAGE_LIST);
-        model.addAttribute("problemsSolvedListCtd", PROBLEM_SOLVED_LIST_CTD);
+        model.addAttribute("handsOnHeading", HANDS_ON_HEADING);
+        model.addAttribute("devopsHeading", DEVOPS_HEADING);
+        model.addAttribute("problemHeading", PROBLEM_HEADING);
+        model.addAttribute("utilityHeading", UTILITY_HEADING);
+        model.addAttribute("otherHeading", OPTIMIZATIONS_HEADING);
+        model.addAttribute("handsOnContent", HANDS_ON_CONTENT);
+        model.addAttribute("devopsContent", DEVOPS_CONTENT);
+        model.addAttribute("solveContent", SOLVE_CONTENT);
+        model.addAttribute("utilityContent", UTILITY_CONTENT);
+        model.addAttribute("utilityContentX", UTILITY_CONTENT_X);
+        model.addAttribute("extraContent2", EXTRA_CONTENT2);
+        model.addAttribute("extraContent3", EXTRA_CONTENT3);
+//        model.addAttribute("problemsSolved", PROBLEM_SOLVED);
+//        model.addAttribute("problemsSolvedList", PROBLEM_SOLVED_LIST);
+//        model.addAttribute("utilityPackage", UTILITY_PACKAGE);
+//        model.addAttribute("utilityPackageList", UTILITY_PACKAGE_LIST);
+//        model.addAttribute("problemsSolvedListCtd", PROBLEM_SOLVED_LIST_CTD);
     }
     private void getAwards(Model model) {
         model.addAttribute("outstanding", OUTSTANDING);

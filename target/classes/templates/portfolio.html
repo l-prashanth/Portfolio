@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport meta tag -->
-    <title>Vertical Scrolling Webpage</title>
+    <title>Prashanth Portfolio</title>
     <link rel="stylesheet" th:href="@{/css/portfolio.css}">
     <script type=text/javascript th:src="@{/js/portfolio.js}"></script>
 </head>
@@ -72,7 +72,7 @@
             <div class="page3-container1">
                 <div class="experience pj1">
                     <div class="timeline">
-                        <!--                        <div class="companyName">Tata Consultancy Services</div>-->
+                        <div class="companyName">TATA CONSULTANCY SERVICES</div>
                         <div class="companyName">BACKEND DEVELOPER</div>
                         <div class="date">Jun 2022 - Present</div>
                     </div>
@@ -84,7 +84,7 @@
             </div>
             <div class="page3-container2">
                 <div class="timeline">
-                    <!--                    <div class="companyName">Tata Consultancy Services</div>-->
+                    <div class="companyName">TATA CONSULTANCY SERVICES</div>
                     <div class="companyName">FRONTEND DEVELOPER</div>
                     <div class="date">Dec 2021 - May 2022</div>
                 </div>
@@ -99,26 +99,30 @@
             <div class="page4-container-wrapper">
                 <div class="page4-container1">
                     <div class="pjTitle">EXPENSE TRACKER APPLICATION</div>
-                    <p>API handles transactions, leveraging MongoDB for data storage,
-                        and integrates Thymeleaf for dynamic balance visualization and table filtering.</p>
+                    <div class ="projectDesc">
+                        API handles transactions, leveraging MongoDB for data storage,
+                        and integrates Thymeleaf for dynamic balance visualization and table filtering.
+                    </div>
                     <img src="/img/Expense.PNG" alt="emailPic" class="pj-pic"/>
                     <button id="expenseGithubId" class="githubClass">GitHub</button>
                     <button id="expenseLiveId" class="liveClass">Live Demo</button>
                 </div>
                 <div class="page4-container2">
                     <div class="pjTitle">SMART MAIL APPLICATION</div>
-                    <p>API intelligently extracts recipient names from emails and incorporates name and signatures,
-                        enabling users to focus on crafting emails.</p>
+                    <div class ="projectDesc">
+                        API intelligently extracts recipient names from emails and incorporates name and signatures,
+                        enabling users to focus on crafting emails.
+                    </div>
                     <img src="/img/Email.PNG" alt="emailPic" class="pj-pic"/>
                     <button id="mailGithubId" class="githubClass">GitHub</button>
                     <button id="mailLiveId" class="liveClass">Live Demo</button>
                 </div>
                 <div class="page4-container3">
                     <div class="pjTitle">FLIGHT BOOKING APPLICATION</div>
-                    <p>Effortlessly book flights through a user
+                    <div class ="projectDesc">Effortlessly book flights through a user
                         friendly platform with authentication, flight
                         filters and downloadable booking receipts
-                        for booking confirmation</p>
+                        for booking confirmation</div>
                     <img src="/img/Flight.PNG" alt="emailPic" class="pj-pic"/>
                     <button id="flightGithubId" class="githubClass">GitHub</button>
                 </div>
@@ -151,16 +155,18 @@
         <div th:if="${iterStat.index == 5}">
             <div class="page6-container">
                 <div class="problem-content">
-                    <div class="problem" th:each="problem : ${problemsSolved}" th:text="${problem}"></div>
-                    <!--utext for line breaks-->
-                    <div class="problemList" th:each="problem : ${problemsSolvedList}"
-                         th:utext="${problem}"></div>
-                    <div class="utilityPackage" th:each="utility : ${utilityPackage}"
-                         th:utext="${utility}"></div>
-                    <div class="utilityPackageList" th:each="utilityList : ${utilityPackageList}"
-                         th:utext="${utilityList}"></div>
-                    <div class="problemListCtd" th:each="problemListCtd : ${problemsSolvedListCtd}"
-                         th:utext="${problemListCtd}"></div>
+                    <div class="hireHeading1" th:text="${handsOnHeading}"></div>
+                    <div class="hireContent" th:each="handsOn : ${handsOnContent}" th:utext="${handsOn}"></div>
+                    <div class="hireHeading" th:text="${devopsHeading}"></div>
+                    <div class="hireContent" th:each="devops : ${devopsContent}" th:utext="${devops}"></div>
+                    <div class="hireHeading" th:utext="${problemHeading}"></div>
+                    <div class="hireContent" th:each="solve : ${solveContent}" th:utext="${solve}"></div>
+                    <div class="hireHeading" th:text="${utilityHeading}"></div>
+                    <div class="hireContent" th:text="${utilityContentX}"></div>
+                    <div class="hireSubContent" th:each="utility : ${utilityContent}" th:utext="${utility}"></div>
+                    <div class="hireHeading" th:text="${otherHeading}"></div>
+                    <div class="hireContent" th:text="${extraContent2}"></div>
+                    <div class="hireLastContent" th:text="${extraContent3}"></div>
                 </div>
             </div>
         </div>

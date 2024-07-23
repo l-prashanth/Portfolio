@@ -1,4 +1,4 @@
-const resumeLink= "https://drive.google.com/file/d/1uoQLBfODh-XOiqjTX5qjBm5rQcv--Yy6/view?usp=sharing";
+const resumeLink= "https://drive.google.com/file/d/13t4_0RYaptEsqEhP_fI4Sobh48rfhwpl/view?usp=sharing";
 const az204Link= "https://drive.google.com/file/d/1JWIKRft6Yyv0EPUhkTlFUJ_OupRJrKpu/view";
 const az900Link= "https://drive.google.com/file/d/1EOMyp4cib9yqmo7f4ncT4Mn8UUZ1xbkV/view";
 const restApiLink= "https://drive.google.com/file/d/1i7THctG_AkDnrNwpQYoJd3vhNc1nBVrw/view";

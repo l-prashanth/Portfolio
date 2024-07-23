@@ -6,9 +6,9 @@ import java.util.List;
 
 public class SkillConstants {
     public static final List<String> BACKEND_SKILLS = new ArrayList<>(Arrays.asList(
-            "Spring Boot", "Java", "REST API", "JUnit", "Karate", "MongoDB",
-            "Azure Cloud", "Spring Security", "JWT", "Git", "Swagger"));
+            "Spring Boot", "Java", "Rest API", "JUnit", "Karate", "MongoDB",
+            "Azure Cloud", "Spring Security", "JWT", "Git", "Swagger","JavaFX"));
 
     public static final List<String> FRONTEND_SKILLS = new ArrayList<>(Arrays.asList(
-            "VueJS", "JavaScript", "HTML", "Jest", "Thymeleaf"));
+            "VueJS", "JavaScript", "HTML","CSS", "Jest", "Thymeleaf"));
 }
