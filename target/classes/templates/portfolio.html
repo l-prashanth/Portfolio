@@ -155,18 +155,18 @@
         <div th:if="${iterStat.index == 5}">
             <div class="page6-container">
                 <div class="problem-content">
-                    <div class="handsOnHeading" th:text="${handsOnHeading}"></div>
-                    <div class="handsOnContent" th:each="handsOn : ${handsOnContent}" th:utext="${handsOn}"></div>
-<!--                    <div class="handsOnContent" th:each="problem : ${problemsSolved}" th:text="${problem}"></div>-->
-                    <!--utext for line breaks-->
-<!--                    <div class="problemList" th:each="problem : ${problemsSolvedList}"-->
-<!--                         th:utext="${problem}"></div>-->
-<!--                    <div class="utilityPackage" th:each="utility : ${utilityPackage}"-->
-<!--                         th:utext="${utility}"></div>-->
-<!--                    <div class="utilityPackageList" th:each="utilityList : ${utilityPackageList}"-->
-<!--                         th:utext="${utilityList}"></div>-->
-<!--                    <div class="problemListCtd" th:each="problemListCtd : ${problemsSolvedListCtd}"-->
-<!--                         th:utext="${problemListCtd}"></div>-->
+                    <div class="hireHeading1" th:text="${handsOnHeading}"></div>
+                    <div class="hireContent" th:each="handsOn : ${handsOnContent}" th:utext="${handsOn}"></div>
+                    <div class="hireHeading" th:text="${devopsHeading}"></div>
+                    <div class="hireContent" th:each="devops : ${devopsContent}" th:utext="${devops}"></div>
+                    <div class="hireHeading" th:utext="${problemHeading}"></div>
+                    <div class="hireContent" th:each="solve : ${solveContent}" th:utext="${solve}"></div>
+                    <div class="hireHeading" th:text="${utilityHeading}"></div>
+                    <div class="hireContent" th:text="${utilityContentX}"></div>
+                    <div class="hireSubContent" th:each="utility : ${utilityContent}" th:utext="${utility}"></div>
+                    <div class="hireHeading" th:text="${otherHeading}"></div>
+                    <div class="hireContent" th:text="${extraContent2}"></div>
+                    <div class="hireLastContent" th:text="${extraContent3}"></div>
                 </div>
             </div>
         </div>
