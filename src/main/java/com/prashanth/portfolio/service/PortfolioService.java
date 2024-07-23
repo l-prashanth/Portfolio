@@ -42,6 +42,8 @@ public class PortfolioService {
     }
 
     private void getSolvedPage(Model model) {
+        model.addAttribute("handsOnHeading", HANDS_ON_HEADING);
+        model.addAttribute("handsOnContent", HANDS_ON_CONTENT);
         model.addAttribute("problemsSolved", PROBLEM_SOLVED);
         model.addAttribute("problemsSolvedList", PROBLEM_SOLVED_LIST);
         model.addAttribute("utilityPackage", UTILITY_PACKAGE);
