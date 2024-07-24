@@ -245,6 +245,7 @@ body {
     border: 2px solid #89fff6; /* Change border color to the opposite of #020e1c */
     border-radius: 5px;
     padding: 10px;
+    font-weight: bolder;
     background-color: #020e1c; /* Set the background color for the skill to the opposite of #89fff6 */
     color: #89fff6; /* Set the text color to the opposite of #020e1c */
     text-align: center;
