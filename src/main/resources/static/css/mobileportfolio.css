@@ -152,7 +152,7 @@
     .page6-container {
         background-color: #020e1c; /* Set the background color for the skills card to the opposite of #89fff6 */
         border-radius: 10px;
-        margin-top: -20ex;
+        margin-top: -5ex;
         box-shadow: 0 8px 16px rgba(137, 255, 246, 0.2); /* Change shadow color to the opposite of #020e1c */
         padding: 10px; /* Adjusted padding for better spacing */
         width: 300px; /* Adjust width as needed */
@@ -177,23 +177,41 @@
     }
 
     .page4-container-wrapper {
-        display: flex; /* Use flexbox to align containers side by side */
-        justify-content: space-between; /* Space between containers */
-        align-items: flex-start; /* Align items at the start */
+        display: flex; /* Keep using flexbox */
+        flex-direction: column; /* Stack containers vertically */
+        align-items: center; /* Center align items horizontally */
+        justify-content: flex-start; /* Align items at the start */
     }
+
 
     .page4-container1, .page4-container2, .page4-container3 {
         background-color: #020e1c; /* Set the background color for the skills card */
         border-radius: 10px;
         box-shadow: 0 8px 16px rgba(137, 255, 246, 0.2); /* Change shadow color */
         padding: 10px; /* Adjusted padding for better spacing */
-        width: 300px; /* Adjust width as needed */
+        width: 290px; /* Adjust width as needed */
         /*height: 70px; !* Set height *!*/
         text-align: center; /* Center text */
         transition: box-shadow 0.3s ease; /* Smooth transition for shadow on hover */
         font-size: 15px; /* Font size */
-        margin-bottom: 20px; /* Space between rows */
+        margin-bottom: 10px; /* Space between rows */
         margin-right: 10px; /* Space between containers */
+    }
+    .page4-container2{
+        margin-top: -2ex;
+    }
+    /*.page4-container2{*/
+    /*    margin-top: 30ex;*/
+    /*}*/
+    /*.page4-container3{*/
+    /*    margin-top: -10ex;*/
+    /*}*/
+    .pj-pic2,.pj-pic1,.pj-pic3{
+        border-radius: 7px;
+        height: 60px;
+        width: 180px;
+        margin-bottom: 1px;
+        margin-left: 7.2ex;
     }
     .page3-container1,.page3-container2 {
         background-color: #020e1c; /* Set the background color for the skills card to the opposite of #89fff6 */
@@ -286,7 +304,7 @@
 
     }
     .projectDesc {
-        font-size: 10px;
+        font-size: 7px;
         margin: 10px 25px;
     }
 
@@ -325,7 +343,7 @@
         width: 100%;
         height: auto;
         display: block;
-        border-radius: 20px; /* Match the card's border radius for smooth edges */
+        border-radius: 10px; /* Match the card's border radius for smooth edges */
     }
 
     .resume-button, .liveClass, .githubClass {
@@ -337,13 +355,14 @@
         text-align: center; /* Center text */
         cursor: pointer; /* Pointer cursor */
         transition: background-color 0.3s, color 0.3s, box-shadow 0.3s ease; /* Smooth transition */
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     .liveClass, .githubClass{
         padding: 7px; /* Padding */
         margin-right: 10px;
         margin-left: 10px;
-        font-size: 10px;
+        font-size: 7px;
+
     }
     /*.resume-button:hover, .liveClass:hover, .githubClass:hover {*/
     /*    background-color: #89fff6; !* Hover background color *!*/
@@ -401,7 +420,7 @@
     /*    margin-top: -5px;*/
 
     /*}*/
-    .hireContent,.hireLastContent{
+    .hireContent,.hireLastContent,.hireContentSolve{
         white-space: pre-wrap; /* Preserve whitespace and wrap text */
         font-size: 8px;
         /*font-weight: bold;*/

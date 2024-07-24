@@ -159,7 +159,9 @@
                     <div class="hireHeading" th:text="${devopsHeading}"></div>
                     <div class="hireContent" th:each="devops : ${devopsContent}" th:utext="${devops}"></div>
                     <div class="hireHeading" th:utext="${problemHeading}"></div>
-                    <div class="hireContent" th:each="solve : ${solveContent}" th:utext="${solve}"></div>
+<!--                    <div class="hireContentSolve" th:id="hireContentSolve" th:each="solve : ${solveContent}" th:utext="${solve}"></div>-->
+                    <div class="hireContentSolve" th:id="hireContentSolve1" th:each="solve : ${solveContent1}" th:utext="${solve}"></div>
+                    <div class="hireContentSolve" th:id="hireContentSolve2" th:each="solve : ${solveContent2}" th:utext="${solve}"></div>
                     <div class="hireHeading" th:text="${utilityHeading}"></div>
                     <div class="hireContent" th:text="${utilityContentX}"></div>
                     <div class="hireSubContent" th:each="utility : ${utilityContent}" th:utext="${utility}"></div>

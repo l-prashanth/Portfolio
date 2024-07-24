@@ -406,7 +406,7 @@ body {
     margin-top: -5px;
 
 }
-.hireContent,.hireLastContent{
+.hireContent,.hireLastContent,.hireContentSolve{
     white-space: pre-wrap; /* Preserve whitespace and wrap text */
     font-size: 10px;
     /*font-weight: bold;*/
