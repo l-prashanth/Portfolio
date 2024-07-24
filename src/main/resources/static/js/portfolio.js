@@ -33,6 +33,12 @@ document.addEventListener("DOMContentLoaded", function() {
     let mailGithubButton = document.getElementById('mailGithubId');
     let mailLiveButton = document.getElementById('mailLiveId');
     let flightGithubButton = document.getElementById('flightGithubId');
+    if (window.innerWidth <= 768) { // Mobile breakpoint
+        document.getElementById('hireContentSolve1').innerHTML = 'Challenge:\tApplication requests from consumers required logging and<br>\t\t\thandling by a large production support team<br>Solution:\t\tProposed and implemented Resilience4j to manage application<br>\t\t\tfailures and minimize downtime,resulting in significant cost<br>\t\t\treductions by decreasing the need for extensive production<br>\t\t\tsupport';
+    }
+    if (window.innerWidth <= 768) { // Mobile breakpoint
+        document.getElementById('hireContentSolve2').innerHTML = 'Challenge:\tAutomation test scripts required manual input from web forms<br>Solution:\t\tUtilized HtmlUnit to programmatically fill out web forms,<br>\t\t\tenabling automation scripts to operate seamlessly with<br>\t\t\tcaptured data';
+    }
     resumeFunc(resumeButton)
     az204Func(az204Button)
     az900Func(az900Button)
@@ -110,3 +116,4 @@ function cycleTitle() {
     titleTextElement.textContent = titles[currentIndex];
 }
 setInterval(cycleTitle, 2500);
+

@@ -50,6 +50,8 @@ public class PortfolioService {
         model.addAttribute("handsOnContent", HANDS_ON_CONTENT);
         model.addAttribute("devopsContent", DEVOPS_CONTENT);
         model.addAttribute("solveContent", SOLVE_CONTENT);
+        model.addAttribute("solveContent1", SOLVE_CONTENT1);
+        model.addAttribute("solveContent2", SOLVE_CONTENT2);
         model.addAttribute("utilityContent", UTILITY_CONTENT);
         model.addAttribute("utilityContentX", UTILITY_CONTENT_X);
         model.addAttribute("extraContent2", EXTRA_CONTENT2);

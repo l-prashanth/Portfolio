@@ -7,10 +7,10 @@ import java.util.List;
 import static com.prashanth.portfolio.constants.Constants.*;
 
 public class ProblemSolvedConstants {
-    public static final String HANDS_ON_HEADING = "Hands-on Experience in Application Development and Deployment";
-    public static final String DEVOPS_HEADING  = "DevOps Activities Handled";
-    public static final String PROBLEM_HEADING  = "Problem-Solving Initiatives";
-    public static final String UTILITY_HEADING  = "Utility Development";
+    public static final String HANDS_ON_HEADING = "HANDS-ON EXPERIENCE IN APPLICATION DEVELOPMENT AND DEPLOYMENT";
+    public static final String DEVOPS_HEADING  = "DEVOPS ACTIVITIES HANDLED";
+    public static final String PROBLEM_HEADING  = "PROBLEM-SOLVING INITIATIVES";
+    public static final String UTILITY_HEADING  = "UTILITY DEVELOPMENT";
     public static final String OPTIMIZATIONS_HEADING  = "OTHER OPTIMIZATIONS";
     public static final String HANDS_ON_CONTENT1 = "Developed and deployed applications from scratch, managing the entire lifecycle from development to production";
     public static final String HANDS_ON_CONTENT2 = "Actively communicated with onshore clients and collaborated closely with them to ensure efficient application delivery";
@@ -31,6 +31,12 @@ public class ProblemSolvedConstants {
             "Solution:\t\tProposed and implemented Resilience4j to manage application failures and minimize downtime,<br>\t\t        resulting in significant cost reductions by decreasing the need for extensive production support";
     public static final String SOLVE_CONTENT2 = "Challenge:\tAutomation test scripts required manual input from web forms<br>" +
             "Solution:\t\tUtilized HtmlUnit to programmatically fill out web forms, enabling automation scripts to operate seamlessly<br>\t\t        with the captured data.";
+    public static final String SOLVE_CONTENT_MOBILE_1 = "Challenge:\tApplication requests from consumers required logging and<br>" +
+            "handling by a large production support team<br>" +
+            "Solution:\t\tProposed and implemented Resilience4j to manage application failures and minimize downtime,<br>\t\t        resulting in significant cost reductions by decreasing the need for extensive production support";
+    public static final String SOLVE_CONTENT_MOBILE_2 = "Challenge:\\tAutomation test scripts required manual input from web forms<" +
+            "Solution:\\t\\tUtilized HtmlUnit to programmatically fill out web forms,<br>" +
+            "\t\t enabling automation scripts to operate seamlessly with the captured data.";
 
     public static final List<String> HANDS_ON_CONTENT = new ArrayList<>(Arrays.asList(
             HANDS_ON_CONTENT1,HANDS_ON_CONTENT3));
