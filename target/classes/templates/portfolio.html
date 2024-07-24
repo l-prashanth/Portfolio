@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport meta tag -->
     <title>Prashanth Portfolio</title>
     <link rel="stylesheet" th:href="@{/css/portfolio.css}">
-    <link rel="stylesheet" th:href="@{/css/mobileportfolio.css}" media="only screen and (max-width: 767px)"> <!-- Mobile CSS -->
+    <link rel="stylesheet" th:href="@{/css/mobileportfolio.css}" media="only screen and (max-width: 767px)">
+    <!-- Mobile CSS -->
     <script type=text/javascript th:src="@{/js/portfolio.js}"></script>
 </head>
 <body>
@@ -72,11 +73,9 @@
         <div th:if="${iterStat.index == 2}">
             <div class="page3-container1">
                 <div class="experience pj1">
-                    <div class="timeline">
-                        <div class="companyName">TATA CONSULTANCY SERVICES</div>
-                        <div class="companyName">BACKEND DEVELOPER</div>
-                        <div class="date">Jun 2022 - Present</div>
-                    </div>
+                    <div class="companyName">TATA CONSULTANCY SERVICES</div>
+                    <div class="companyName">BACKEND DEVELOPER</div>
+                    <div class="date">Jun 2022 - Present</div>
                     <div class="skills-list-experience">
                         <div class="pjSkill" th:each="skill : ${pj2Skills}" th:text="${skill}"></div>
                     </div>
@@ -84,11 +83,9 @@
                 </div>
             </div>
             <div class="page3-container2">
-                <div class="timeline">
-                    <div class="companyName">TATA CONSULTANCY SERVICES</div>
-                    <div class="companyName">FRONTEND DEVELOPER</div>
-                    <div class="date">Dec 2021 - May 2022</div>
-                </div>
+                <div class="companyName">TATA CONSULTANCY SERVICES</div>
+                <div class="companyName">FRONTEND DEVELOPER</div>
+                <div class="date">Dec 2021 - May 2022</div>
                 <div class="skills-list-experience">
                     <div class="pjSkill" th:each="skill : ${pj1Skills}" th:text="${skill}"></div>
                 </div>
@@ -100,7 +97,7 @@
             <div class="page4-container-wrapper">
                 <div class="page4-container1">
                     <div class="pjTitle">EXPENSE TRACKER APPLICATION</div>
-                    <div class ="projectDesc">
+                    <div class="projectDesc">
                         API handles transactions, leveraging MongoDB for data storage,
                         and integrates Thymeleaf for dynamic balance visualization and table filtering.
                     </div>
@@ -110,7 +107,7 @@
                 </div>
                 <div class="page4-container2">
                     <div class="pjTitle">SMART MAIL APPLICATION</div>
-                    <div class ="projectDesc">
+                    <div class="projectDesc">
                         API intelligently extracts recipient names from emails and incorporates name and signatures,
                         enabling users to focus on crafting emails.
                     </div>
@@ -120,10 +117,11 @@
                 </div>
                 <div class="page4-container3">
                     <div class="pjTitle">FLIGHT BOOKING APPLICATION</div>
-                    <div class ="projectDesc">Effortlessly book flights through a user
+                    <div class="projectDesc">Effortlessly book flights through a user
                         friendly platform with authentication, flight
                         filters and downloadable booking receipts
-                        for booking confirmation</div>
+                        for booking confirmation
+                    </div>
                     <img src="/img/Flight.PNG" alt="emailPic" class="pj-pic"/>
                     <button id="flightGithubId" class="githubClass">GitHub</button>
                 </div>

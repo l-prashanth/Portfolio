@@ -55,7 +55,7 @@
     }
 
     .companyName,.pjTitle {
-        font-size: 15px;
+        font-size: 10px;
         font-weight: bolder;
         font-family: Verdana, cursive;
     }
@@ -156,7 +156,7 @@
         border-radius: 10px;
         box-shadow: 0 8px 16px rgba(137, 255, 246, 0.2); /* Change shadow color */
         padding: 10px; /* Adjusted padding for better spacing */
-        width: 450px; /* Adjust width as needed */
+        width: 300px; /* Adjust width as needed */
         /*height: 70px; !* Set height *!*/
         text-align: center; /* Center text */
         transition: box-shadow 0.3s ease; /* Smooth transition for shadow on hover */
@@ -164,44 +164,20 @@
         margin-bottom: 20px; /* Space between rows */
         margin-right: 10px; /* Space between containers */
     }
-
-    /*!* Optional: If you want to ensure they take equal space *!*/
-    /*.page4-container1, .page4-container2, .page4-container3 {*/
-    /*    flex: 1; !* Allow containers to grow equally *!*/
-
-    /*}*/
-
-    /*!* Remove margin from the last container *!*/
-    /*.page4-container3 {*/
-    /*    margin-right: 0; !* No margin on the last container *!*/
-    /*}*/
-
-    /*.page5-container4 {*/
-    /*    height: 70px;*/
-    /*}*/
-
-    .page3-container1 {
+    .page3-container1,.page3-container2 {
         background-color: #020e1c; /* Set the background color for the skills card to the opposite of #89fff6 */
         border-radius: 10px;
         box-shadow: 0 8px 16px rgba(137, 255, 246, 0.2); /* Change shadow color to the opposite of #020e1c */
         padding: 20px; /* Adjusted padding for better spacing */
-        width: 600px; /* Adjust width as needed */
+        width: 300px; /* Adjust width as needed */
         text-align: center;
         transition: box-shadow 0.3s ease; /* Smooth transition for shadow on hover */
+
+    }
+    .page3-container1 {
         margin-bottom: 20px;
         margin-top: -50px;
     }
-
-    .page3-container2 {
-        background-color: #020e1c; /* Set the background color for the skills card to the opposite of #89fff6 */
-        border-radius: 10px;
-        box-shadow: 0 8px 16px rgba(137, 255, 246, 0.2); /* Change shadow color to the opposite of #020e1c */
-        padding: 20px; /* Adjusted padding for better spacing */
-        width: 600px; /* Adjust width as needed */
-        text-align: center;
-        transition: box-shadow 0.3s ease; /* Smooth transition for shadow on hover */
-    }
-
     .skills-card:hover {
         box-shadow: 0 12px 24px rgba(137, 255, 246, 0.3); /* Change hover shadow color to the opposite of #020e1c */
     }
@@ -225,9 +201,9 @@
     .skills-list-experience {
         display: grid; /* Use grid for skills layout */
         grid-template-columns: repeat(6, 1fr); /* Three columns */
-        gap: 20px; /* Space between skills */
-        margin-left: 20px;
-        margin-right: 20px;
+        gap: 3px; /* Space between skills */
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
     .pjSkill {
@@ -240,6 +216,7 @@
         transition: background-color 0.3s, color 0.3s, box-shadow 0.3s ease; /* Smooth transition for background, color, and shadow */
         margin-top: 15px;
         margin-bottom: 15px;
+        font-size: 7px;
     }
 
     .skill {
@@ -284,11 +261,12 @@
     }
 
     .experienceList {
-        margin-bottom: 20px;
-        font-size: 10px; /* Adjust font size */
+        margin-bottom: 10px;
+        font-size: 9px; /* Adjust font size */
         color: #89fff6; /* Change text color to the opposite of #020e1c */
         text-align: left;
-        margin-left: 20px;
+        margin-left: 5px;
+
     }
     .projectDesc {
         font-size: 10px;
