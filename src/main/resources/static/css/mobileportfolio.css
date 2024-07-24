@@ -82,9 +82,9 @@
         /* Removed margin from buttons */
     }
 
-    .buttons-bar button:hover {
-        box-shadow: 0 8px 16px rgba(137, 255, 246, 0.3), 0 12px 24px rgba(137, 255, 246, 0.3); /* Shadow effect */
-    }
+    /*.buttons-bar button:hover {*/
+    /*    box-shadow: 0 8px 16px rgba(137, 255, 246, 0.3), 0 12px 24px rgba(137, 255, 246, 0.3); !* Shadow effect *!*/
+    /*}*/
 
 
 
@@ -109,6 +109,7 @@
         display: flex; /* Use flexbox for layout */
         flex-direction: column; /* Stack cards vertically */
         align-items: center; /* Center cards horizontally */
+        margin-top: -15ex;
     }
 
     .skills-card {
@@ -138,6 +139,7 @@
         padding: 20px; /* Adjusted padding for better spacing */
         width: 250px; /* Adjust width as needed */
         text-align: center;
+        margin-top: -15ex;
         transition: box-shadow 0.3s ease; /* Smooth transition for shadow on hover */
     }
     .page3-container1:hover,.page3-container2:hover,.page4-container1:hover,.page4-container2:hover,.page4-container3:hover{
@@ -170,6 +172,9 @@
         font-size: 12px;
         margin-bottom: 20px;
     }
+    .page5-container1{
+        margin-top: -20px;
+    }
 
     .page4-container-wrapper {
         display: flex; /* Use flexbox to align containers side by side */
@@ -198,15 +203,14 @@
         width: 310px; /* Adjust width as needed */
         text-align: center;
         transition: box-shadow 0.3s ease; /* Smooth transition for shadow on hover */
-
     }
     .page3-container1 {
         margin-bottom: 20px;
-        margin-top: -50px;
+        margin-top: -58px;
     }
-    .skills-card:hover {
-        box-shadow: 0 12px 24px rgba(137, 255, 246, 0.3); /* Change hover shadow color to the opposite of #020e1c */
-    }
+    /*.skills-card:hover {*/
+    /*    box-shadow: 0 12px 24px rgba(137, 255, 246, 0.3); !* Change hover shadow color to the opposite of #020e1c *!*/
+    /*}*/
 
 
 
@@ -248,11 +252,11 @@
         transition: background-color 0.3s, color 0.3s, box-shadow 0.3s ease; /* Smooth transition for background, color, and shadow */
     }
 
-    .skill:hover, .pjSkill:hover {
-        background-color: #89fff6; /* Change hover background color to the opposite of #020e1c */
-        color: #020e1c; /* Change hover text color to the opposite of #89fff6 */
-        box-shadow: 0 8px 16px rgba(137, 255, 246, 0.3); /* Change hover shadow color to the opposite of #020e1c */
-    }
+    /*.skill:hover, .pjSkill:hover {*/
+    /*    background-color: #89fff6; !* Change hover background color to the opposite of #020e1c *!*/
+    /*    color: #020e1c; !* Change hover text color to the opposite of #89fff6 *!*/
+    /*    box-shadow: 0 8px 16px rgba(137, 255, 246, 0.3); !* Change hover shadow color to the opposite of #020e1c *!*/
+    /*}*/
 
 
 
@@ -341,11 +345,11 @@
         margin-left: 10px;
         font-size: 10px;
     }
-    .resume-button:hover, .liveClass:hover, .githubClass:hover {
-        background-color: #89fff6; /* Hover background color */
-        color: #020e1c; /* Hover text color */
-        box-shadow: 0 8px 16px rgba(137, 255, 246, 0.3); /* Hover shadow */
-    }
+    /*.resume-button:hover, .liveClass:hover, .githubClass:hover {*/
+    /*    background-color: #89fff6; !* Hover background color *!*/
+    /*    color: #020e1c; !* Hover text color *!*/
+    /*    box-shadow: 0 8px 16px rgba(137, 255, 246, 0.3); !* Hover shadow *!*/
+    /*}*/
 
     .achievementClass {
         font-size: 8px;
@@ -387,28 +391,28 @@
         margin-right: 3px;
     }
     .hireHeading,.hireHeading1{
-        font-size: 10px;
+        font-size: 11px;
         font-weight: bolder;
         margin-bottom: 8px;
         margin-top: 8px;
         text-align: center;
     }
-    .hireHeading1{
-        margin-top: -5px;
+    /*.hireHeading1{*/
+    /*    margin-top: -5px;*/
 
-    }
+    /*}*/
     .hireContent,.hireLastContent{
         white-space: pre-wrap; /* Preserve whitespace and wrap text */
-        font-size: 7px;
+        font-size: 8px;
         /*font-weight: bold;*/
         margin-bottom: 8px;
         margin-left: 10px;
         margin-right: 10px;
         /*text-align: center;*/
     }
-    .hireLastContent{
-        margin-bottom: -15px;
-    }
+    /*.hireLastContent{*/
+    /*    margin-bottom: -15px;*/
+    /*}*/
     .hireSubContent{
         font-size: 8px;
         /*font-weight: bold;*/
@@ -419,8 +423,8 @@
     .page1-github {
         filter: brightness(0) saturate(100%) invert(69%) sepia(100%) saturate(675%) hue-rotate(120deg) brightness(95%) contrast(100%);
         position: absolute; /* Position the GitHub link and image independently */
-        bottom: 22ex; /* Adjust the top position as needed */
-        left: 4.7ex; /* Adjust the right position as needed */
+        bottom: 37ex; /* Adjust the top position as needed */
+        left: 4.9ex; /* Adjust the right position as needed */
     }
 
     .github-pic {
@@ -431,8 +435,8 @@
     .page1-linkedin {
         filter: brightness(0) saturate(100%) invert(69%) sepia(100%) saturate(675%) hue-rotate(120deg) brightness(95%) contrast(100%);
         position: absolute; /* Position the GitHub link and image independently */
-        bottom: 28ex; /* Adjust the top position as needed */
-        left: 3ex; /* Adjust the right position as needed */
+        bottom: 30.5ex; /* Adjust the top position as needed */
+        left: 3.4ex; /* Adjust the right position as needed */
     }
 
     .linkedin-pic {
@@ -443,8 +447,8 @@
     .page1-location {
         filter: brightness(0) saturate(100%) invert(69%) sepia(100%) saturate(675%) hue-rotate(120deg) brightness(95%) contrast(100%);
         position: absolute; /* Position the GitHub link and image independently */
-        bottom: 22.5ex; /* Adjust the top position as needed */
-        right: 5ex; /* Adjust the right position as needed */
+        bottom: 30.2ex; /* Adjust the top position as needed */
+        right: 4.8ex; /* Adjust the right position as needed */
     }
 
     .az204-pic, .az204-pic-left {
@@ -473,44 +477,44 @@
 
     .vertical-line-left1 {
         height: 7ex; /* Set the height of the line */
-        bottom: 34.5ex; /* Adjust the bottom position as needed */
+        bottom: 44.5ex; /* Adjust the bottom position as needed */
         left: 7ex; /* Adjust the left position as needed */
     }
 
     .vertical-line-left2 {
         height: 4ex; /* Set the height of the line */
-        bottom: 45ex; /* Adjust the bottom position as needed */
+        bottom: 55ex; /* Adjust the bottom position as needed */
         left: 7ex; /* Adjust the left position as needed */
     }
 
     .vertical-line-left3 {
         height: 1ex; /* Set the height of the line */
-        bottom: 52ex; /* Adjust the bottom position as needed */
+        bottom: 62ex; /* Adjust the bottom position as needed */
         left: 7ex; /* Adjust the left position as needed */
     }
 
     .vertical-line-right1 {
         height: 7ex; /* Set the height of the line */
-        bottom: 34.5ex; /* Adjust the bottom position as needed */
+        bottom: 44.5ex; /* Adjust the bottom position as needed */
         right: 7ex; /* Adjust the left position as needed */
     }
 
     .vertical-line-right2 {
         height: 4ex; /* Set the height of the line */
-        bottom: 45ex; /* Adjust the bottom position as needed */
+        bottom: 55ex; /* Adjust the bottom position as needed */
         right: 7ex; /* Adjust the left position as needed */
     }
 
     .vertical-line-right3 {
         height: 1ex; /* Set the height of the line */
-        bottom: 52ex; /* Adjust the bottom position as needed */
+        bottom: 62ex; /* Adjust the bottom position as needed */
         right: 7ex; /* Adjust the left position as needed */
     }
 
     .page1-gmail {
         filter: brightness(0) saturate(100%) invert(69%) sepia(100%) saturate(675%) hue-rotate(120deg) brightness(95%) contrast(100%);
         position: absolute; /* Position the Gmail image independently */
-        bottom: 28ex; /* Adjust the bottom position as needed */
+        bottom: 36.8ex; /* Adjust the bottom position as needed */
         right: 3.2ex; /* Adjust the left position as needed */
     }
 
