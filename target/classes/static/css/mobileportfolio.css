@@ -49,10 +49,45 @@
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        width: 70%;
-        padding: 10px 0;
-        /*    background-color: #020e1c; !* Set the background color for the buttons container to the opposite of #89fff6 *!*/
+        width: 90%;
+        padding: 10px 0; /* Keep padding for the container */
+        margin: 0; /* Remove margin from the button container */
     }
+
+    .buttons-bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-radius: 20px;
+        flex-wrap: wrap; /* Allow buttons to wrap into multiple lines */
+
+    }
+
+    .buttons-bar button {
+        background-color: #020e1c; /* Button background color */
+        color: #89fff6; /* Button text color */
+        border: none;
+        padding: 5px 30px; /* Adjust padding for height and width */
+        text-align: center;
+        text-decoration: none;
+        display: flex; /* Use flex for button content */
+        justify-content: center; /* Center content in button */
+        align-items: center; /* Center content vertically */
+        font-size: 9px; /* Adjust font size as needed */
+        width: calc(33.33% - 0px); /* Set width to one-third of the container */
+        height: 30px; /* Reduced height */
+        cursor: pointer;
+        border-radius: 4px;
+        /* Removed margin from buttons */
+    }
+
+    .buttons-bar button:hover {
+        box-shadow: 0 8px 16px rgba(137, 255, 246, 0.3), 0 12px 24px rgba(137, 255, 246, 0.3); /* Shadow effect */
+    }
+
+
+
 
     .companyName,.pjTitle {
         font-size: 10px;
@@ -60,32 +95,7 @@
         font-family: Verdana, cursive;
     }
 
-    .buttons-bar {
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-        align-items: center;
-        border-radius: 20px;
-    }
 
-    .buttons-bar button {
-        background-color: #020e1c; /* Change button background color to the opposite of #020e1c */
-        color: #89fff6; /* Change button text color to the opposite of #89fff6 */
-        border: none;
-        padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 10px; /* Smaller font size */
-        width: 105px; /* Set a fixed width for all buttons */
-        height: 40px;
-        cursor: pointer;
-        border-radius: 4px;
-    }
-
-    .buttons-bar button:hover {
-        box-shadow: 0 8px 16px rgba(137, 255, 246, 0.3), 0 12px 24px rgba(137, 255, 246, 0.3); /* Shadow effect */
-    }
 
     /* Styles for screens smaller than 768px (tablets and mobile devices) */
     @media (max-width: 768px) {
@@ -95,14 +105,30 @@
         }
     }
 
+    .skills-container {
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center cards horizontally */
+    }
+
     .skills-card {
         background-color: #020e1c; /* Set the background color for the skills card to the opposite of #89fff6 */
         border-radius: 10px;
         box-shadow: 0 8px 16px rgba(137, 255, 246, 0.2); /* Change shadow color to the opposite of #020e1c */
         padding: 20px; /* Adjusted padding for better spacing */
-        width: 400px; /* Adjust width as needed */
+        width: 280px; /* Adjust width as needed */
         text-align: center;
         transition: box-shadow 0.3s ease; /* Smooth transition for shadow on hover */
+        margin-bottom: 20px; /* Add space between cards */
+    }
+
+    .skills-list {
+        display: grid; /* Use grid for skills layout */
+        grid-template-columns: repeat(3, 1fr); /* Three columns */
+        gap: 20px; /* Space between skills */
+    }
+    .left{
+        margin-left: 20px;
     }
 
     .page1-container {
@@ -169,7 +195,7 @@
         border-radius: 10px;
         box-shadow: 0 8px 16px rgba(137, 255, 246, 0.2); /* Change shadow color to the opposite of #020e1c */
         padding: 20px; /* Adjusted padding for better spacing */
-        width: 300px; /* Adjust width as needed */
+        width: 310px; /* Adjust width as needed */
         text-align: center;
         transition: box-shadow 0.3s ease; /* Smooth transition for shadow on hover */
 
@@ -182,21 +208,14 @@
         box-shadow: 0 12px 24px rgba(137, 255, 246, 0.3); /* Change hover shadow color to the opposite of #020e1c */
     }
 
-    .skills-container {
-        display: flex; /* Use flexbox for layout */
-        justify-content: space-between; /* Space between cards */
-    }
+
+
 
     /*.page4-container{*/
     /*    display: flex; !* Use flexbox for layout *!*/
     /*    justify-content: space-between; !* Space between cards *!*/
     /*}*/
 
-    .skills-list {
-        display: grid; /* Use grid for skills layout */
-        grid-template-columns: repeat(3, 1fr); /* Three columns */
-        gap: 20px; /* Space between skills */
-    }
 
     .skills-list-experience {
         display: grid; /* Use grid for skills layout */
@@ -235,13 +254,7 @@
         box-shadow: 0 8px 16px rgba(137, 255, 246, 0.3); /* Change hover shadow color to the opposite of #020e1c */
     }
 
-    .left {
-        margin-right: 20px; /* Space between left and right cards */
-    }
 
-    .right {
-        /* No additional styles needed */
-    }
 
     .problem-content {
         padding-bottom: 10px;
